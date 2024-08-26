@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Editor({ onChange, initialValue }) {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(initialValue || "");
 
   useEffect(() => {
     setText(initialValue);
@@ -21,7 +21,7 @@ function Editor({ onChange, initialValue }) {
       onChange={handleChange}
       placeholder="Enter markdown here"
       rows="10"
-      columns="50"
+      cols="50"
     />
   );
 }
