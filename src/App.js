@@ -38,7 +38,7 @@ Here's something that can draw your attention
 You can even use it to make tables like so:
 
 Tic | Tac | Toe
----------- | --------- | ---------
+
 X | X | O
 X | O | X
 O | X | O
@@ -61,9 +61,11 @@ You can even add an image if you'd like with the use of an explanation point lik
   return (
     <div className="App">
       <div className="editor-container">
+        <div className="title-bar">Editor</div>
         <Editor id="editor" onChange={setMarkdown} initialValue={markdown} />
       </div>
       <div className="preview-container">
+        <div className="title-bar">Preview</div>
         <Preview id="preview" markdown={markdown} />
       </div>
     </div>
