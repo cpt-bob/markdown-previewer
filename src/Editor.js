@@ -17,6 +17,7 @@ function Editor({ onChange, initialValue }) {
 
   return (
     <textarea
+      id="editor"
       value={text}
       onChange={handleChange}
       placeholder="Enter markdown here"

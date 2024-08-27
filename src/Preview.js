@@ -7,7 +7,11 @@ function Preview({ markdown }) {
   };
 
   return (
-    <div className="preview" dangerouslySetInnerHTML={getMarkdownText()} />
+    <div
+      id="preview"
+      className="preview"
+      dangerouslySetInnerHTML={getMarkdownText()}
+    />
   );
 }
 
